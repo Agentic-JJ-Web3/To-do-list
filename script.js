@@ -6,6 +6,13 @@ function addTask() {
     alert("Please enter a task!");
     return;
   }
+//   Add text using keyboard
+document.getElementById("task-input").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
+
 
   const list = document.getElementById("task-list");
 
@@ -16,6 +23,8 @@ function addTask() {
   listItem.addEventListener("click", function () {
     listItem.classList.toggle("done");
   });
+
+//   
 
   // Add delete button
   const deleteBtn = document.createElement("button");
