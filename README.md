@@ -32,8 +32,8 @@ To get this To-Do List application up and running on your local machine, follow 
    If this project is hosted on a version control system like Git, clone it to your local machine:
 
    ```
-   git clone <repository-url>
-   cd <project-folder>
+   git clone (https://github.com/Agentic-JJ-Web3/To-do-list)
+   
    
    ```
 
