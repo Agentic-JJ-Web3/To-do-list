@@ -1,17 +1,19 @@
-function addTask() {
-  const input = document.getElementById("task-input");
-  const taskText = input.value.trim();
-
-  if (taskText === "") {
-    alert("Please enter a task!");
-    return;
-  }
-//   Add text using keyboard
-document.getElementById("task-input").addEventListener("keydown", function(event) {
+const input = document.getElementById("task-input");
+// Add text using keyboard
+input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     addTask();
   }
 });
+
+function addTask() {
+  const taskText = input.value.trim();
+
+  if (taskText === "") {
+    alert("Please enter a task!");
+    return ;
+  }
+
 
 
   const list = document.getElementById("task-list");
